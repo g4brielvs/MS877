@@ -1,0 +1,47 @@
+%Chargement des packages
+\usepackage[utf8]{inputenc} % l'encodage des fichiers est utf-8, mettre [latin1] si necessaire
+\usepackage[english, portuguese]{babel}
+
+%\usepackage[headheight=30pt,showframe]{geometry}
+\usepackage[headheight=30pt]{geometry}
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+
+\usepackage{graphicx} %pour afficher des images
+\usepackage{float}	%pour forcer le placement des images.
+
+\usepackage{fancyhdr} %pour modification des pieds de page
+
+\usepackage[usenames,dvipsnames]{color} % pour les textes en gris
+
+\usepackage{framed}
+
+
+\usepackage{hyperref} %pour que les références soient des liens hypertextes
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=blue,
+%    filecolor=magenta,      
+%    urlcolor=cyan,
+%}
+
+% package used by \citep and \citet
+\usepackage[sort&compress,round,authoryear]{natbib}
+
+%\renewcommand*\rmdefault{ptm}
+%\renewcommand*\rmdefault{ppl}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definição}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}

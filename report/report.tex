@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt,oneside]{article}
+\input{style/packages.tex}
+\usepackage{natbib}
+
+% Comment utiliser : 
+% - la page de titre est à personnaliser (title/title.tex)
+% - le contenu est à rédiger dans le répertoire pages/, s'inspirer des exemples présents dans ce modèle.
+% - les annexes sont à rédiger dans le répertoire appendix/
+% - la bibliographie utilise BibTex (fichier biblio.bib)
+% - les variables suivantes sont à remplir :
+\newcommand{\TitreRapport}{Uma Introdução à Lingüística Computacional}
+\newcommand{\DateRapport}{2017}
+\newcommand{\AuteurRapport}{Gabriel Stefanini Vicente}
+\newcommand{\NomEntreprise}{Universidade Estadual de Campinas}
+
+\input{style/style.tex}
+\input{title/title.tex}
+
+\begin{document}
+\pagestyle{fancy}
+\maketitle
+
+\input{body/pages/acknowledgements.tex}
+\newpage
+\input{body/pages/abstract.tex}
+\newpage
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+\newpage
+
+\input{body/pages/introduction.tex}
+\newpage
+\input{body/pages/titre1/titre1.tex}
+\newpage
+\input{body/pages/titre2/titre2.tex}
+\newpage
+\input{body/pages/conclusion.tex}
+\newpage
+
+\bibliographystyle{apalike}
+\bibliography{bibliography} 
+\addcontentsline{toc}{section}{Referências}
+
+%\appendix
+%\input{appendix/titreA.tex}
+
+\end{document}
